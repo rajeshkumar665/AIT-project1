@@ -1,0 +1,61 @@
+body{
+    background-image: url(https://t4.ftcdn.net/jpg/03/95/37/19/360_F_395371923_x2IUqSOYDCQeBCx3auKcK3EbyzNjhlNV.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+.logo img{
+    width: 160px;
+    height: 160px;
+}
+.nav a{
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+    transition-duration: 1s;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.nav a:hover{
+    background-color: rgb(245, 237, 237);
+    color: black;
+}
+.games{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(8,1fr);
+}
+.games img{
+    transition-duration: 1s;
+}
+.games img:hover{
+        transform: scale(1.5);
+}
+.game-h2{
+    border: 1px solid red;
+    background-color: rgb(218, 61, 61);
+    margin: 40px;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.f-col a{
+    color: white;
+    text-decoration: none;
+}
+.f-col a:hover{
+    color: red;
+}
+.f-col{
+    color: white;
+}
+@media only screen and (max-width: 600px){
+    .nav,.games,footer{
+        grid-template-columns: repart(1,1fr);
+    }
+}
